@@ -14,8 +14,10 @@ const Header = () => {
                 </Link>
                 
                 <div className="hidden md:inline-flex items-center space-x-5">
-                    <h3>About</h3>
-                    <h3>Contact</h3>
+                    <Link href="/posts/SuperHeroes" >
+                        <h3 className='cursor-pointer'>PostPage</h3>
+                    </Link>
+                    <Link href="/"><h3 className='cursor-pointer'>HomePage</h3></Link>
                     <h3 className="text-white bg-green bg-green-600 px-4 py-1 rounded-full">Follow</h3>
                 </div>
             </div>
@@ -39,3 +41,4 @@ const Header = () => {
 }
 
 export default Header
+
